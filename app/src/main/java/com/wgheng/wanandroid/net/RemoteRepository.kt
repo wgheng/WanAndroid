@@ -1,6 +1,5 @@
 package com.wgheng.wanandroid.net
 
-import com.orhanobut.logger.Logger
 import com.wgheng.wanandroid.model.bean.ArticleListBean
 import io.reactivex.Observable
 import io.reactivex.ObservableTransformer
@@ -12,10 +11,6 @@ import io.reactivex.schedulers.Schedulers
  * Description :
  */
 class RemoteRepository private constructor() {
-
-    init {
-        Logger.i("RemoteRepository初始化了")
-    }
 
     companion object {
         val instance = SingleInstance.holder

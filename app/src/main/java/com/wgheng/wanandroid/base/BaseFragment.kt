@@ -77,25 +77,25 @@ abstract class BaseFragment<T : IBasePresenter> : Fragment(), IBaseView {
         container.addView(mHolder.get())
     }
 
-    protected fun initView() {
+    protected open fun initView() {
 
     }
 
     /**
      * 设置view监听
      */
-    protected fun setListener() {
+    protected open fun setListener() {
 
     }
 
-    protected fun initData() {
+    protected open fun initData() {
 
     }
 
     /**
      * 设置页面标题
      */
-    fun setTitle() {
+    protected open fun setTitle() {
 
     }
 
