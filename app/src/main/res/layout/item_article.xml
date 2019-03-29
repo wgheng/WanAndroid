@@ -10,10 +10,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:padding="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -40,11 +37,13 @@
 
         </LinearLayout>
 
+        <include layout="@layout/line"/>
+
         <TextView
             android:id="@+id/tvTitle"
             tools:text="标题"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:textSize="16dp"
             android:lines="1"
             android:textColor="@color/gray_242424"
@@ -75,8 +74,8 @@
                 android:id="@+id/ivImage"
                 android:layout_marginStart="10dp"
                 android:scaleType="centerCrop"
-                android:layout_width="60dp"
-                android:layout_height="60dp"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
 
         </LinearLayout>
 
